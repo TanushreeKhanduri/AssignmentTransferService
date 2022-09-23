@@ -64,7 +64,7 @@ public class BankAccountController {
 
         Preconditions.checkArgument(bankAccountDto != null, "bankAccountDto can not be null");
         Preconditions.checkArgument(customerId != null && customerId != 0, "Customer Id can not be null");
-        Preconditions.checkArgument(bankAccountDto.getCard() != null, "bankAccountDto.card can not be null");
+        Preconditions.checkArgument(bankAccountDto.getCard() != null, "Card can not be null");
         
         BankAccount bankAccount = DtoToBankAccountConverter.convert(bankAccountDto);
 
