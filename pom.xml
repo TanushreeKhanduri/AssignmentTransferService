@@ -8,13 +8,13 @@
         <version>2.7.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.bankaccountmanager</groupId>
-    <artifactId>bankaccountmanager</artifactId>
+    <groupId>com.abn.tranfer</groupId>
+    <artifactId>transfer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>BankAccountManager</name>
-    <description>BankAccountManager</description>
+    <name>transfer-service</name>
+    <description>Transfer Service</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
