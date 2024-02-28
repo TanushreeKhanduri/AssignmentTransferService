@@ -17,11 +17,11 @@ import java.util.Set;
 public class SwaggerConfig {
 
     public static final Contact DEFAULT_CONTACT = new Contact(
-            "Tanushree Khanduri", "http://localhost:8080/", "tanushree.khanduri24@gmail.com");
+            "Tanushree Khanduri", "http://localhost:8081/", "tanushree.khanduri24@gmail.com");
     public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
-            "Accounts Service", "Assignment created for managing bank accounts", "1.0",
+            "Transfer Service", "Assignment created for managing bank accounts", "1.0",
             "urn:tos", DEFAULT_CONTACT,
-            "License 1.0", "http://localhost:8080/licenses/LICENSE-1.0", Arrays.asList());
+            "License 1.0", "http://localhost:8081/licenses/LICENSE-1.0", Arrays.asList());
     private static final Set<String> DEFAULT_PRODUCES_AND_CONSUMES =
             new HashSet<>(Arrays.asList("application/json"));
 
@@ -33,7 +33,7 @@ public class SwaggerConfig {
                 .consumes(DEFAULT_PRODUCES_AND_CONSUMES)
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .apis(RequestHandlerSelectors.basePackage("com.abn.transfer.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.transfer.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
